@@ -31,6 +31,7 @@ mkdir -p /etc/opt/chrome/policies/managed
 # Create the policy JSON file
 cat > /etc/opt/chrome/policies/managed/polygon_policy.json << EOF
 {
+  "SecondaryGoogleAccountSigninAllowed": true,
   "URLBlocklist": [],
   "SystemFeaturesDisableList": [],
   "EditBookmarksEnabled": true,
@@ -110,5 +111,5 @@ echo ""
 echo "User policies modified (50+ policies changed)"
 echo ""
 echo "Done! Policies have been applied."
-echo "Visit chrome://policy and refresh your policies "
+echo "Restart Chrome UI manually with: restart ui"
 echo ""
