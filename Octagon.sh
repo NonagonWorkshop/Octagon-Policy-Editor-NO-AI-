@@ -10,7 +10,7 @@
 clear
 
 echo "=========================================="
-echo "  Welcome to Octotgon Policy Editor"
+echo "  Welcome to Octagon Policy Editor"
 echo "=========================================="
 echo ""
 echo "Heavily based off of:"
