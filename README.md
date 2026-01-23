@@ -42,5 +42,5 @@ If you already have RootFS Disabled, then you are not required to run the Octago
 
 Made by: GamerRyker & StarkMist111960
 
-[!Warning]
+>[!Warning]
 >**WE ARE NOT RESPONSIBLE FOR ANY DAMAGES OR ISSUES THIS CAUSES TO YOUR DEVICE, NOR IS MERCURYWORKSHOP.**
