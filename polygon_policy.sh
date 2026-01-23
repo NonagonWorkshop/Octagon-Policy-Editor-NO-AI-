@@ -22,8 +22,19 @@ echo ""
 echo "=========================================="
 echo ""
 
+echo 'Default Selection: '
+echo "  • GoGuardian"
+echo "  • GoGuardian License"
+echo "  • Snap&Read"
+echo "  • CoWriter"
+echo "  • Read&Write"
+echo '"Ids and other info: haldlgldplgnggkjaafhelgiaglafanh;https://goguardian.com/ext/m.xml,"jjfeehgdeghiknkilcildnjofkcndjcm;https://goguardian.com/licenses/update.php","mloajfnmjckfjbeeofcdaecbelnblden;https://clients2.google.com/service/update2/crx","ifajfiofeifbbhbionejdliodenmecna;https://clients2.google.com/service/update2/crx","inoeonmfapjbbkmdafoankkfajkcphgd;https://clients2.google.com/service/update2/crx"'
+
+read -p 'Enter desired extension URLs (leave blank for default selection): '
+if [[ $EXT_LIST -eq '' ]]; then 
 # Build extension force-install shit, recently added Read&Write updates btw
-EXT_LIST='"haldlgldplgnggkjaafhelgiaglafanh;https://goguardian.com/ext/m.xml","jjfeehgdeghiknkilcildnjofkcndjcm;https://goguardian.com/licenses/update.php","mloajfnmjckfjbeeofcdaecbelnblden;https://clients2.google.com/service/update2/crx","ifajfiofeifbbhbionejdliodenmecna;https://clients2.google.com/service/update2/crx","inoeonmfapjbbkmdafoankkfajkcphgd;https://clients2.google.com/service/update2/crx"'
+  EXT_LIST='"haldlgldplgnggkjaafhelgiaglafanh;https://goguardian.com/ext/m.xml","jjfeehgdeghiknkilcildnjofkcndjcm;https://goguardian.com/licenses/update.php","mloajfnmjckfjbeeofcdaecbelnblden;https://clients2.google.com/service/update2/crx","ifajfiofeifbbhbionejdliodenmecna;https://clients2.google.com/service/update2/crx","inoeonmfapjbbkmdafoankkfajkcphgd;https://clients2.google.com/service/update2/crx"'
+fi
 
 # Create policy directory if needed
 mkdir -p /etc/opt/chrome/policies/managed
@@ -103,11 +114,7 @@ EOF
 echo "[✓] Policies configured successfully!"
 echo ""
 echo "Extensions force-installed:"
-echo "  • GoGuardian"
-echo "  • GoGuardian License"
-echo "  • Snap&Read"
-echo "  • CoWriter"
-echo "  • Read&Write"
+echo $EXT_LIST
 echo ""
 echo "User policies modified (50+ policies changed)"
 echo ""
