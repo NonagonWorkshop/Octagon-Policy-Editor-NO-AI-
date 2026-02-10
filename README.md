@@ -16,7 +16,7 @@ Step 3: Login as root
 Step 4: Execute the Octagon Policy Editor Command:
 
 ```
-curl -Ls https://raw.githubusercontent.com/NonagonWorkshop/Octagon-Policy-Editor/refs/heads/main/Octagon.sh | bash
+curl -Ls https://raw.githubusercontent.com/NonagonWorkshop/Octagon-Policy-Editor/main/Octagon.sh | bash
 ```
 
 NOTE: This is only temporary and the Policy Editor will go away on your next Restart / Reboot (sudo reboot)! 
@@ -33,7 +33,7 @@ Step 3: Login is as root
 Step 4: Execute the Octagon RootFS Command:
 
 ```
-curl -Ls https://raw.githubusercontent.com/NonagonWorkshop/Octagon-Policy-Editor/refs/heads/main/OctagonRootfs.sh | bash
+curl -Ls https://raw.githubusercontent.com/NonagonWorkshop/Octagon-Policy-Editor/main/OctagonRootfs.sh | bash
 ```
 
 If you want to do it permanantly, if RootFS verification is not yet disabled, use the RootFS script, reboot, and then run Octagon.sh.
