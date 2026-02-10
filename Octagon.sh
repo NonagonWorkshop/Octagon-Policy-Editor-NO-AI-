@@ -30,10 +30,10 @@ echo "  • CoWriter"
 echo "  • Read&Write"
 echo '"Ids and other info: haldlgldplgnggkjaafhelgiaglafanh;https://goguardian.com/ext/m.xml,"jjfeehgdeghiknkilcildnjofkcndjcm;https://goguardian.com/licenses/update.php","mloajfnmjckfjbeeofcdaecbelnblden;https://clients2.google.com/service/update2/crx","ifajfiofeifbbhbionejdliodenmecna;https://clients2.google.com/service/update2/crx","inoeonmfapjbbkmdafoankkfajkcphgd;https://clients2.google.com/service/update2/crx"'
 echo ''
-read -p 'Enter desired extension URLs (leave blank for default selection): ' EXT_LIST
-if [[ $EXT_LIST -eq '' ]]; then 
+read -p 'Enter desired extension URLs (leave blank for default selection): ' EXTENSION_LIST
+if [[ $EXTENSION_LIST -eq '' ]]; then 
 # Build extension force-install shit, recently added Read&Write updates btw
-    EXT_LIST='"haldlgldplgnggkjaafhelgiaglafanh;https://goguardian.com/ext/m.xml","jjfeehgdeghiknkilcildnjofkcndjcm;https://goguardian.com/licenses/update.php","mloajfnmjckfjbeeofcdaecbelnblden;https://clients2.google.com/service/update2/crx","ifajfiofeifbbhbionejdliodenmecna;https://clients2.google.com/service/update2/crx","inoeonmfapjbbkmdafoankkfajkcphgd;https://clients2.google.com/service/update2/crx"'
+    EXTENSION_LIST='"haldlgldplgnggkjaafhelgiaglafanh;https://goguardian.com/ext/m.xml","jjfeehgdeghiknkilcildnjofkcndjcm;https://goguardian.com/licenses/update.php","mloajfnmjckfjbeeofcdaecbelnblden;https://clients2.google.com/service/update2/crx","ifajfiofeifbbhbionejdliodenmecna;https://clients2.google.com/service/update2/crx","inoeonmfapjbbkmdafoankkfajkcphgd;https://clients2.google.com/service/update2/crx"'
 fi
 
 # Create policy directory if needed
@@ -114,7 +114,7 @@ EOF
 echo "[✓] Policies configured successfully!"
 echo ""
 echo "Extensions force-installed:"
-echo $EXT_LIST
+echo $EXTENSION_LIST
 echo ""
 echo "User policies modified (50+ policies changed)"
 echo ""
